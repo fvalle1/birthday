@@ -1,4 +1,4 @@
-![Grph](graph.png "graph of data generated")
+![Graph](graph.png "graph of data generated")
 
 # Birthday problem with montecarlo
 Simulates birthday problem with monte carlo simulation.
