@@ -1,9 +1,9 @@
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
-#include <cmath>
 #include <fstream>
 #include <iomanip>
+#include <cmath>
 
 using namespace std;
 
@@ -59,7 +59,7 @@ int cntr=0;
  data source: http://demo.istat.it/altridati/IscrittiNascita/2014/T2.8.xls
 */
  double p(double x){
-	return (-3.27*pow(10.,-9)*x*x*x+1.86*pow(10.,-6)*x*x-2.63*pow(10.,-4)+0.0889)/15.643;
+	return (-3.27*pow(10.,-9)*x*x*x+1.86*pow(10.,-6)*x*x-2.63*pow(10.,-4)*x+0.0889)/15.643;
 }
 
 int yearrand(){
