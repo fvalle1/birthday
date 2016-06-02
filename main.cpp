@@ -34,7 +34,7 @@ int cntr=0;
 	
 	double average=0;
 	
-	for(int j=1; j<n;j++){//n simulations
+	for(int j=1; j<=n;j++){//n simulations
 		for(int l=0;l<365;l++) year[l]=0; //reset
 		cntr=0;
 		
@@ -42,8 +42,8 @@ int cntr=0;
 		cntr++;
 		if(++year[rand()%365]==2) break;	 //count how many people before two have same birthday
 	}
-		average=((average*(j-1))+cntr)/j;
-	}
+		average=((average*(j-1))+cntr)/j;	
+}
 	cout<<"\n\n***************************\n\n";
 	cout<<"On average with "<<n<<" simulation, I need "<<average<<" people to be sure two have same birthday\n\n";
 	
