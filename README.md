@@ -19,5 +19,15 @@ note the `-O3` flags, it drastically reduces time of esecutions!
 
 You can check that for about 23 people the probability of find *two people with same birthday* is near **50%**!
 
+#random
+this program uses a special `yearrand()` function, which returns a random integer based on **real data** provided by *italian statistic institute* about date of born in 2014 in Italy.
+
+source: [http://demo.istat.it/altridati/IscrittiNascita/](https://archive.is/modaz)
+
+I did this (you can do the same):
+* got data from [here](http://demo.istat.it/altridati/IscrittiNascita/2014/T2.8.xls)
+* fit the data with a polinomial (grade 3) function
+* generate random number between 1 and 365 based on that distribution
+
 #license
 See [LICENSE](LICENSE)
