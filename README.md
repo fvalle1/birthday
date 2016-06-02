@@ -13,11 +13,11 @@ run: `./birthday.out`
 note the `-O3` flags, it drastically reduces time of esecutions!
 
 #how it works
-*ExpeimentI* generates `n=500000` **groups of people** with random birthday during a **year**, then checks how may groups have got almost two people born in the same day! Quiet simple.
+*ExpeimentI* generates `n=500000` **groups of people** with random birthday during a **year**, then checks how may groups have got almost two people born in the same day.
 
 *ExperimentII* still call people with **random birthday** until **two have the same**, it does it `n=500000` times then tells the average number of people needed.
 
-You can check then for about 23 people the probability of find *two people with same birthday* is near **50%**!
+You can check that for about 23 people the probability of find *two people with same birthday* is near **50%**!
 
 #license
 See [LICENSE](LICENSE)
