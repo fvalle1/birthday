@@ -21,7 +21,7 @@ int main(){
   while(!save.is_open()) cout <<"error"<<endl;
   //file
 int year[365]={0};
- int people=55,n=50000;
+ int people=55,n=500000;
 int cntr=0;
  for(int i=2;i<=people;i++){//table per people
    cntr=0;
