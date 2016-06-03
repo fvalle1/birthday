@@ -5,6 +5,8 @@
 #include <iomanip>
 #include <cmath>
 
+#include "statusbar.h"
+
 using namespace std;
 
 //double seed=time(NULL);
@@ -22,6 +24,7 @@ int main(){
   //file
 int year[365]={0};
  int people=55,n=500000;
+	statusbar.maxevents=people;
 int cntr=0;
  for(int i=2;i<=people;i++){//table per people
    cntr=0;
@@ -30,13 +33,15 @@ int cntr=0;
      for(int k=0;k<i;k++) ++year[yearrand()%365]; //put i random birthday in year
      for(int l=0;l<365;l++) if(year[l]>=2) {cntr++;break;}//check if in this of n cases there are 2 people with same birthday
    }
-   cout<<i<<" people\tp:  "<<setw(6)<<(double)cntr/n*100<<"%"<<endl;
-   save<<i<<";"<<(double)cntr/n<<endl; 
+	 save<<i<<";"<<(double)cntr/n<<endl;
+   cout<<i<<" people\tp:  "<<setw(6)<<(double)cntr/n*100<<"%"<<"\t";
+	 statusbar.drawwpercent(i);cout<<endl;
+
 }
 	//II experiment
-	
+	cout<<"\n\n***************************\n\n";
 	double average=0;
-	
+	statusbar.setmaxevents(n);
 	for(int j=1; j<=n;j++){//n simulations
 		for(int l=0;l<365;l++) year[l]=0; //reset
 		cntr=0;
@@ -45,10 +50,10 @@ int cntr=0;
 		cntr++;
 		if(++year[yearrand()%365]==2) break;	 //count how many people before two have same birthday
 	}
-		average=((average*(j-1))+cntr)/j;	
+		average=((average*(j-1))+cntr)/j;
+		cout<<"\r";statusbar.draw(j);
 }
-	cout<<"\n\n***************************\n\n";
-	cout<<"On average with "<<n<<" simulation, I need "<<average<<" people to be sure two have same birthday\n\n";
+	cout<<"\r With "<<n<<" simulation, I need a average of "<<average<<" people to be sure two have same birthday\n\n";
 	
   return 0;
 }
