@@ -6,7 +6,7 @@ Simulates birthday problem with monte carlo simulation.
 More informations about the problem [here](https://duckduckgo.com/?q=birthday+problem).
 
 #how to run
-compile: `g++ -O3 -I. main.cpp -o birthday.out`
+compile: `g++ -O3 -Ilib/ -Llib -lstatusbar main.cpp -o montecarlobirthday.out`
 
 run: `./birthday.out`
 
