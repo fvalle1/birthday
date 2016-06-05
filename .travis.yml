@@ -8,3 +8,5 @@ script:
 os:
 - osx
 - linux
+notifications:
+  email: false
