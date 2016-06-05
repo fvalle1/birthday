@@ -9,5 +9,6 @@ script:
 os:
 - osx
 - linux
+- windows
 notifications:
   email: false
