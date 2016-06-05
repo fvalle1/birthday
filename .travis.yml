@@ -4,7 +4,7 @@ install:
 - g++ -Ilib/ lib/statusbar.cpp -c
 - g++ main.o statusbar.o -Ilib/ -O3 -o montecarlobirthday.out
 script:
-- ./montecarlobirthday.out
+- ./montecarlobirthday.out 0
 os:
 - osx
 - linux

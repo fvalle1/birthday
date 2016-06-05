@@ -14,7 +14,8 @@ double seed=33149495;
 double p(double x);
 int yearrand();
 
-int main(){
+int main(int argc, char* argv[]){
+if(argc>1) if(atoi(*(argv+1))==0) return 0;
 	srand(seed);
 	statusbar mybar;
 	int n=500000;
