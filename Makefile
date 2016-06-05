@@ -1,11 +1,14 @@
 CXX=g++
-OBJ=statusbar.o
+OBJ=statusbar.o main.o
 LFLAGS=-lstatusbar
 CFLAGS=-O3 -Ilib/
 
-#main
-montecarlobirthday.out: main.cpp lib/libstatusbar.a
-	$(CXX) $(LFLAGS) -O3 -Ilib/ -Llib/ $< -o $@
+TARGET=montecarlobirthday.out 
+
+all: $(TARGET)
+
+%.out: $(OBJ)
+	$(CXX) -O3 -Ilib/  $^ -o $@
 
 lib/libstatusbar.a: statusbar.o
 	ar rcs $@ $^
@@ -15,6 +18,9 @@ lib/libstatusbar.a: statusbar.o
 
 %.o: lib/%.cpp
 	$(CXX) $(CFLAGS) -c $<
+
+wl: main.cpp lib/libstatusbar.a
+	$(CXX) $(LFLAGS) -Llib/ -Ilib/ $< -o $(TARGET)
 
 clean:
 	rm -rf *.o *~
