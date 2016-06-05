@@ -25,4 +25,4 @@ wl: main.cpp lib/libstatusbar.a
 clean:
 	rm -rf *.o *~
 cleanall: clean
-	rm *.out
+	rm -f *.out
