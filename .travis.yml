@@ -3,5 +3,8 @@ compiler:
 os:
 - linux
 - osx
-install: make
+install:
+- g++ -O3 -Ilib/ lib/statusbar.cpp -c
+- g++ -O3 -Ilib/ main.cpp -c
+- g++ -O3 main.o statusbar.o -o montecarlobirthday.out
 script: ./montecarlobirthday.out
