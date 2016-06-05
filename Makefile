@@ -18,5 +18,5 @@ lib/libstatusbar.a: statusbar.o
 
 clean:
 	rm -rf *.o *~
-claenall: clean
+cleanall: clean
 	rm *.out
