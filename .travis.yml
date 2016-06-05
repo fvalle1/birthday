@@ -4,3 +4,5 @@ compiler:
 os:
 - linux
 - osx
+install: make
+script: ./montecarlobirthday.out
