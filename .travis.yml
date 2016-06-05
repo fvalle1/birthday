@@ -1,6 +1,6 @@
 language: cpp
 compiler:
--g++
+- g++
 os:
--linux
--osx
+- linux
+- osx
