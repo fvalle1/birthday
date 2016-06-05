@@ -5,7 +5,7 @@ CFLAGS=-O3 -Ilib/
 
 #main
 montecarlobirthday.out: main.cpp lib/libstatusbar.a
-	$(CXX) $(LFLAGS) -Ilib/ -Llib/ $< -o $@
+	$(CXX) $(LFLAGS) -O3 -Ilib/ -Llib/ $< -o $@
 
 lib/libstatusbar.a: statusbar.o
 	ar rcs $@ $^
