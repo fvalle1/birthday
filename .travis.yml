@@ -1,0 +1,10 @@
+language: cpp
+install:
+- g++ -Ilib/ main.cpp -c
+- g++ -Ilib/ lib/statusbar.cpp -c
+- g++ main.o statusbar.o -Ilib/ -O3 -o montcarlobirthday.out
+script:
+- ./montecarlobirthday.out
+os:
+- osx
+- linux
