@@ -8,6 +8,9 @@
 *.gch
 *.pch
 
+#static libraries
+*.a
+
 # Executables
 *.exe
 *.out
