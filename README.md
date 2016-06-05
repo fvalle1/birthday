@@ -6,11 +6,11 @@ Simulates birthday problem with monte carlo simulation.
 More informations about the problem [here](https://duckduckgo.com/?q=birthday+problem).
 
 #how to run
-compile: `g++ -O3 -Ilib/ -Llib -lstatusbar main.cpp -o montecarlobirthday.out`
+compile: `make`
 
 run: `./birthday.out`
 
-note the `-O3` flags, it drastically reduces time of esecutions!
+if you compile without *makefile* put the `-O3` flags, it drastically reduces time of esecutions!
 
 #how it works
 *ExpeimentI* generates `n=500000` **groups of people** with random birthday during a **year**, then checks how may groups have got almost two people born in the same day.
