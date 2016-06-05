@@ -1,4 +1,7 @@
 language: cpp
+compiler:
+- g++
+- clang++
 install:
 - make
 script:
