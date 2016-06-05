@@ -1,6 +1,6 @@
 ![Graph](graph.png "graph of data generated")
 
-# Birthday problem with montecarlo
+# Birthday problem with montecarlo [![Build Status](https://travis-ci.org/fvalle1/birthday.svg?branch=master)](https://travis-ci.org/fvalle1/birthday)
 Simulates birthday problem with monte carlo simulation.
 
 More informations about the problem [here](https://duckduckgo.com/?q=birthday+problem).
