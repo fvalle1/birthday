@@ -20,9 +20,9 @@ if you compile without *makefile* put the `-O3` flags, it drastically reduces ti
 You can check that for about 23 people the probability of find *two people with same birthday* is near **50%**!
 
 #random
-this program uses a special `yearrand()` function, which returns a random integer based on **real data** provided by *italian statistic institute* about date of born in 2014 in Italy.
+this program uses a special `yearrand()` function, which returns a random integer based on **real data** provided by *italian statistic institute*.
 
-source: [http://demo.istat.it/altridati/IscrittiNascita/](https://archive.is/modaz)
+source (date of born in Italy in 2014): [http://demo.istat.it/altridati/IscrittiNascita/](https://archive.is/modaz)
 
 I did this (you can do the same):
 * got data from [here](http://demo.istat.it/altridati/IscrittiNascita/2014/T2.8.xls)
