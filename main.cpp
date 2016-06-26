@@ -56,7 +56,7 @@ int cntr=0;
 		average=((average*(j-1))+cntr)/j;
 		mybar.draw(j);
 }
-	cout<<"\rWith "<<n<<" simulation, I need a average of "<<average<<" people to be sure two have same birthday\n\n";
+	cout<<"\nWith "<<n<<" simulation, I need a average of "<<average<<" people to be sure two have same birthday\n\n";
   return 0;
 }
 
