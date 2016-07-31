@@ -32,6 +32,6 @@ I did this (you can do the same):
 * generate random number between 1 and 365 based on that distribution
 
 #license
-The MIT license
+The MIT License (MIT) 2016 fvalle1
 
 See [LICENSE](LICENSE)
